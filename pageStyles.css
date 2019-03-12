@@ -1,80 +1,14 @@
-html * {
-	font: Times medium black;
-	background: #9BCCFE;	
-	padding-left: 5px;
+@charset "utf-8";
+/* CSS Document */
+
+//to make a footer
+
+#insertDataInputs {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
 }
 
-body {
-	border: 5px dotted black;	
-}
-
-q {
-	font-size: medium;	
-}
-
-p {
-	padding-left: 10px;	
-}
-
-ul li, ol li{
-	padding: 5px;
-}
-
-.myPic {
-	float: right;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	padding: 10px;
-}
-
-.carlPic {
-	margin-left: 10em;
-	margin-right: 10em;
-	width: 50%;
-	height: 50%;	
-}
-
-.best {
-	font-style: italic;	
-}
-
-table p {
-	font-size: small;	
-}
-
-.cellData {
-	padding: 10px;
-}
-
-.links {
-	font-size: large;
-}
-
-#courseTable {
-	margin-left: 240px;
-}
-
-table #courseTable td:nth-child(1) {
-  text-align: center;
-}
-
-table #courseTable td:nth-child(3) {
-  text-align: center;
-}
-
-table #courseTable tr:nth-child(1) {
-  background: gray;
-}
-
-table #courseTable tr:nth-child(3) {
-  background: gray;
-}
-
-table #courseTable tr:nth-child(5) {
-  background: gray;
-}
-
-#mainTable {
-	border: none;
-	margin-top: 30px;
-}
