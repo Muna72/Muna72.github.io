@@ -3,8 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Friends Firebase Page</title>
-<script type="text/javascript" src="myJSFile.js"></script>
-
+<link rel="stylesheet" href="pageStyles.css"/>
 <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -22,23 +21,51 @@
 </head>
 
 <body>
+<script type="text/javascript" src="myJSFile.js"></script>
+<h1>Friend Database</h1>
 
+	<div id="fileUpload">
     Select file to upload:
     <input type="file" id="upload"><br /><br />
 	<button onclick="processUpload()">Upload</button>
+    </div>
     
     <div id="search">
-    	<p>Search Database</p>
-        Enter Person's Name:<input type="text" id="searchField"><br /><br />
+    	<p>Search for Friend</p>
+        Enter Person's Name:<input type="text" id="searchField">
         <button onclick="searchDatabase()">Search</button>
     </div>
     
-    <div id="insertDataInputs" >
-    <p>Add Friend to Database</p>
-    	Name: <input type="text" id="nameField"><br />
-        Phone Number:<input type="text" id="numberField"><br />
-        Age:<input type="text" id="ageField"><br /><br />
-		<button onclick="validateInputData()">Add Row</button>
+        
+    <div id = "searchTable" class="hidden">
+    <p>Search Results</p>
+    <table id="resultsTable">
+       <tr>
+        <th>Age</th>
+        <th>Name</th> 
+        <th>Phone Number</th>
+      </tr>
+    </table>
+    </div>
+    
+    <div class="hidden">
+    <p class="center">All Friends</p>
+    <table id="friendTable">
+       <tr>
+        <th>Age</th>
+        <th>Name</th> 
+        <th>Phone Number</th>
+        <th>Action</th>
+      </tr>
+    </table>
+    </div>
+    
+    <div id="insertDataInputs">
+    <p class="op">Add Friend to Database</p>
+    	<label>Name:</label> <input type="text" id="nameField">
+        <label>Phone Number:</label><input type="text" id="numberField">
+        <label>Age:</label><input type="text" id="ageField">
+		<button onclick="validateInputData()">Add Friend</button>
     </div>
 
 </body>
