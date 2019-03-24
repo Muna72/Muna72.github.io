@@ -1,0 +1,154 @@
+
+<html>
+  <head>
+    <title>VueJS Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+      #fetchresult {
+        font-family: "Lucida Console", Monaco, monospace;
+      }
+	  
+	  html {
+		background-color: #F3E3F7;  
+	  }
+
+      table {
+        width: 100%;
+		border-collapse: collapse;
+      }
+	  
+      table, td, th {
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      th, td {
+        padding: 3px;
+      }
+
+      img {
+        margin: 5px;
+      }
+
+      button {
+        margin: 10px;
+        padding: 5px;
+      }
+	  
+	  .slider {
+        width: 25%; 
+        display: block;
+        margin: 15px;
+      }
+
+      .res {
+        position: fixed;
+        right: 15;
+        top: 15;
+      }
+	  
+	  .center {
+		  text-align: center;
+	  }
+    </style>
+  </head>
+  <body>
+    <!-- replace the actual text of the following h2 with a text that shows your name -->
+    <h2 class="center">VueJS Experiment by Muna Gigowski</h2>
+
+    <div id="top">
+      <div id="control">
+        <label for="inputrange" v-if="userCount == 1">
+          Will fetch {{ userCount }} random user
+        </label>
+        <label for="inputrange" v-else="userCount > 1">
+          Will fetch {{ userCount }} random users
+        </label>
+        <input
+          type="range"
+          id="inputrange"
+          min="1"
+          max="50"
+          v-model:value="userCount"
+          class="slider"
+        />
+
+        <input type="checkbox" id="AU" value="AU" v-model="nationalities" />
+        <label for="AU">AU</label>
+        <input type="checkbox" id="BR" value="BR" v-model="nationalities" />
+        <label for="BR">BR</label>
+        <input type="checkbox" id="CA" value="CA" v-model="nationalities" />
+        <label for="CA">CA</label>
+        <input type="checkbox" id="CH" value="CH" v-model="nationalities" />
+        <label for="CH">CH</label>
+        <input type="checkbox" id="DE" value="DE" v-model="nationalities" />
+        <label for="DE">DE</label>
+        <input type="checkbox" id="DK" value="DK" v-model="nationalities" />
+        <label for="DK">DK</label>
+        <input type="checkbox" id="ES" value="ES" v-model="nationalities" />
+        <label for="ES">ES</label>
+        <input type="checkbox" id="FI" value="FI" v-model="nationalities" />
+        <label for="FI">FI</label>
+        <input type="checkbox" id="FR" value="FR" v-model="nationalities" />
+        <label for="FR">FR</label>
+        <input type="checkbox" id="GB" value="GB" v-model="nationalities" />
+        <label for="GB">GB</label>
+        <input type="checkbox" id="IE" value="IE" v-model="nationalities" />
+        <label for="IE">IE</label>
+        <input type="checkbox" id="IR" value="IR" v-model="nationalities" />
+        <label for="IR">IR</label>
+        <input type="checkbox" id="NO" value="NO" v-model="nationalities" />
+        <label for="NO">NO</label>
+        <input type="checkbox" id="NL" value="NL" v-model="nationalities" />
+        <label for="NL">NL</label>
+        <input type="checkbox" id="NZ" value="NZ" v-model="nationalities" />
+        <label for="NZ">NZ</label>
+        <input type="checkbox" id="TR" value="TR" v-model="nationalities" />
+        <label for="TR">TR</label>
+        <input type="checkbox" id="US" value="US" v-model="nationalities" />
+        <label for="US">US</label>
+        <br />
+        <!-- <span>Checked names: {{ nationalities }}</span> -->
+      </div>
+      <button v-on:click="getUser">Fetch</button>
+      <button v-on:click="resetUser">Reset</button>
+
+      <!-- bind img to src in mouseover event handler function -->
+      <img v-bind:src="currentHighRes" class="res" />
+      <div id="fetchresult">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Phone</th>
+            <th>DOB</th>
+            <th>Image</th>
+            <th>Flag</th>
+          </tr>
+          <template v-for="u in users">
+            <tr @mouseover="setHighRes(u)" @mouseleave="resetHighRes(u)">
+              <td>{{ u.name.first }} {{ u.name.last }}</td>
+              <td>{{ u.email }}</td>
+              <td>{{ u.login.username }}</td>
+              <td>{{ u.phone }}</td>
+              <td>{{ u.dob.date.substring(0, 10) }}</td>
+              <td>
+                <img v-bind:src="`${u.picture.thumbnail}`" />
+              </td>
+              <td>
+                <img
+                  v-bind:src="`https://www.countryflags.io/${u.nat}/shiny/64.png`"
+                />
+              </td>
+            </tr>
+          </template>
+        </table>
+      </div>
+    </div>
+
+    <script src="firstvue.js"></script>
+    <script src="vue.js"></script>
+  </body>
+</html>
