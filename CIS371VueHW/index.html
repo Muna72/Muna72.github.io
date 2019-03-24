@@ -60,10 +60,10 @@
     <div id="top">
       <div id="control">
         <label for="inputrange" v-if="userCount == 1">
-          Will fetch {{ userCount }} random user
+          Will fetch {{userCount}} random user
         </label>
         <label for="inputrange" v-else="userCount > 1">
-          Will fetch {{ userCount }} random users
+          Will fetch {{userCount}} random users
         </label>
         <input
           type="range"
@@ -109,7 +109,6 @@
         <input type="checkbox" id="US" value="US" v-model="nationalities" />
         <label for="US">US</label>
         <br />
-        <!-- <span>Checked names: {{ nationalities }}</span> -->
       </div>
       <button v-on:click="getUser">Fetch</button>
       <button v-on:click="resetUser">Reset</button>
@@ -129,11 +128,11 @@
           </tr>
           <template v-for="u in users">
             <tr @mouseover="setHighRes(u)" @mouseleave="resetHighRes(u)">
-              <td>{{ u.name.first }} {{ u.name.last }}</td>
-              <td>{{ u.email }}</td>
-              <td>{{ u.login.username }}</td>
-              <td>{{ u.phone }}</td>
-              <td>{{ u.dob.date.substring(0, 10) }}</td>
+              <td>{{u.name.first}} {{u.name.last}}</td>
+              <td>{{u.email}}</td>
+              <td>{{u.login.username }}</td>
+              <td>{{u.phone}}</td>
+              <td>{{u.dob.date.substring(0, 10)}}</td>
               <td>
                 <img v-bind:src="`${u.picture.thumbnail}`" />
               </td>
