@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Muna72/Muna72.github.io/tree/master/ReactHomework/precache-manifest.b9e639d0c02881a368831485f677c95d.js"
+  "/ReactHomework/precache-manifest.b560c7611a498f7b86e59a3bb2c41508.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Muna72/Muna72.github.io/tree/master/ReactHomework/index.html", {
+workbox.routing.registerNavigationRoute("/ReactHomework/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

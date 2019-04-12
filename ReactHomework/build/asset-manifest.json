@@ -1,14 +1,14 @@
 {
-  "main.css": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/css/main.fc9e5432.chunk.css",
-  "main.js": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/main.b9a63911.chunk.js",
-  "main.js.map": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/main.b9a63911.chunk.js.map",
-  "runtime~main.js": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/runtime~main.e251c136.js",
-  "runtime~main.js.map": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/runtime~main.e251c136.js.map",
-  "static/js/2.9573ae56.chunk.js": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/2.9573ae56.chunk.js",
-  "static/js/2.9573ae56.chunk.js.map": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/js/2.9573ae56.chunk.js.map",
-  "index.html": "/Muna72/Muna72.github.io/tree/master/ReactHomework/index.html",
-  "precache-manifest.b9e639d0c02881a368831485f677c95d.js": "/Muna72/Muna72.github.io/tree/master/ReactHomework/precache-manifest.b9e639d0c02881a368831485f677c95d.js",
-  "service-worker.js": "/Muna72/Muna72.github.io/tree/master/ReactHomework/service-worker.js",
-  "static/css/main.fc9e5432.chunk.css.map": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/css/main.fc9e5432.chunk.css.map",
-  "static/media/logo.svg": "/Muna72/Muna72.github.io/tree/master/ReactHomework/static/media/logo.5d5d9eef.svg"
+  "main.css": "/ReactHomework/static/css/main.fc9e5432.chunk.css",
+  "main.js": "/ReactHomework/static/js/main.e02cc244.chunk.js",
+  "main.js.map": "/ReactHomework/static/js/main.e02cc244.chunk.js.map",
+  "runtime~main.js": "/ReactHomework/static/js/runtime~main.4660e733.js",
+  "runtime~main.js.map": "/ReactHomework/static/js/runtime~main.4660e733.js.map",
+  "static/js/2.9573ae56.chunk.js": "/ReactHomework/static/js/2.9573ae56.chunk.js",
+  "static/js/2.9573ae56.chunk.js.map": "/ReactHomework/static/js/2.9573ae56.chunk.js.map",
+  "index.html": "/ReactHomework/index.html",
+  "precache-manifest.b560c7611a498f7b86e59a3bb2c41508.js": "/ReactHomework/precache-manifest.b560c7611a498f7b86e59a3bb2c41508.js",
+  "service-worker.js": "/ReactHomework/service-worker.js",
+  "static/css/main.fc9e5432.chunk.css.map": "/ReactHomework/static/css/main.fc9e5432.chunk.css.map",
+  "static/media/logo.svg": "/ReactHomework/static/media/logo.5d5d9eef.svg"
 }
